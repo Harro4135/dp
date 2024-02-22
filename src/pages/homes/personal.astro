@@ -31,11 +31,6 @@ const metadata = {
     id="hero"
     title="Oliver Harrison"
     tagline="Harri818"
-    image={{
-      src: '~/assets/images/position.png',
-      alt: 'Oliver Harrison',
-      style: { width: '100%', height: '100%', objectFit: 'contain' },
-    }}
   >
     <Fragment slot="subtitle">
       Design Portfolio <br />
@@ -199,13 +194,13 @@ const metadata = {
       src: 'https://plus.unsplash.com/premium_photo-1683288295841-782fa47e4770?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
       alt: 'Fashion e-commerce Image',
     }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
-    }}
-  >
+      callToAction={{
+        target: '_blank',
+        text: 'Go to the project',
+        icon: 'tabler:chevron-right',
+        href: '~/components/pages/landing/lead-generation.astro',
+      }}
+    >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
         Project 3: <br /><span class="text-2xl">E-commerce website redesign for fashion brand</span>
