@@ -31,6 +31,11 @@ const metadata = {
     id="hero"
     title="Oliver Harrison"
     tagline="Harri818"
+    image={{
+      src: '~/assets/images/position.png',
+      alt: 'Oliver Harrison',
+      style: { width: '100%', height: '100%', objectFit: 'contain' },
+    }}
   >
     <Fragment slot="subtitle">
       Design Portfolio <br />
@@ -52,8 +57,11 @@ const metadata = {
       <br />
     </Fragment>
     <Fragment slot="image">
-      <img src="~/assets/images/position.png" alt="Design Image" style="width: 100%; height: auto;" />
-    </Fragment>
+      image={{
+        src: '~/assets/images/position.png',
+        alt: 'Oliver Harrison',
+        style: { width: '100%', height: '100%', objectFit: 'contain' },
+      }}
   </Content>
 
   <!-- Steps Widget ****************** -->
