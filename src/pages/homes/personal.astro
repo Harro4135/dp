@@ -20,7 +20,6 @@ const metadata = {
         { text: 'Home', href: '#' },
         { text: 'Position', href: '#about' },
         { text: 'Timeline', href: '#resume' },
-        { text: 'Projects', href: '#projects' },
       ]}
     />
   </Fragment>
@@ -41,7 +40,6 @@ const metadata = {
   image = {{
     src: '~/assets/images/position.png',
     alt: 'Oliver Harrison',
-    style: { width: '100%', height: '100%', objectFit: 'contain' },
   
   }}>
     <Fragment slot="content">
@@ -99,7 +97,7 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
-    id="projects"
+    id="project1"
     isReversed
     items={[
       {
@@ -116,13 +114,12 @@ const metadata = {
     image={{
       src: '~/assets/images/image.png',
       alt: 'Tech Design Image',
-      style: { width: 'auto', height: '100%', objectFit: 'fill' },
     }}
     callToAction={{
       target: '_blank',
       text: 'Go to the project',
       icon: 'tabler:chevron-right',
-      href: '#',
+      href: 'homes/projects/project1',
     }}
   >
     <Fragment slot="content">
@@ -140,6 +137,7 @@ const metadata = {
 
   <Content
     isReversed
+    id="project2"
     isAfterContent={true}
     items={[
       {
@@ -160,7 +158,7 @@ const metadata = {
       callToAction={{
         text: 'Go to the project',
         icon: 'tabler:chevron-right',
-        href: '#',
+        href: '/homes/projects/project2',
       }}
     >
       <Fragment slot="content">
@@ -178,6 +176,7 @@ const metadata = {
 
     <Content
       isReversed
+      id="project3"
       isAfterContent={true}
       items={[
         {
@@ -196,7 +195,7 @@ const metadata = {
       callToAction={{
         text: 'Go to the project',
         icon: 'tabler:chevron-right',
-        href: '/projects/project1',
+        href: '/homes/projects/project3',
       }}
     >
     <Fragment slot="content">
