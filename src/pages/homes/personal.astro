@@ -36,13 +36,18 @@ const metadata = {
       Design Portfolio <br />
     </Fragment>
   </Hero>
- <Content>
+ <Content
+  image="{{
+    src: 'https://plus.unsplash.com/premium_photo-1683288295841-782fa47e4770?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+    alt: 'Fashion e-commerce Image',
+  }}">
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Position</h3>
       <p>
         I'm a passionate problem solver, with a indepth understanding of physics principles.  
       </p>
       <br />
+
       <p>
         I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
         details of typography, or the vibrant hues of nature during my outdoor escapades.
@@ -58,6 +63,11 @@ const metadata = {
     title="Design Experience"
     subtitle="Here's a brief overview of my design experience and the projects I've worked on."
     items={[
+        {
+        title:
+          'University of Toronto Aerospace Team <br /> <span class="font-normal">Rocketry Simulation</span> <br /> <span class="text-sm font-normal">Sem 1</span>',
+        icon: 'tabler:briefcase',
+      },
       {
         title:
           'Praxis I<br /> <span class="font-normal">The Hydroguard</span> <br /> <span class="text-sm font-normal">Sem 1</span>',
@@ -76,11 +86,6 @@ const metadata = {
       {
         title:
           'Praxis II <br /> <span class="font-normal">???</span> <br /> <span class="text-sm font-normal">Sem 2</span>',
-        icon: 'tabler:briefcase',
-      },
-      {
-        title:
-          'University of Toronto Aerospace Team <br /> <span class="font-normal">Rocketry Simulation</span> <br /> <span class="text-sm font-normal">Sem 1 and Sem 2</span>',
         icon: 'tabler:briefcase',
       },
     ]}
@@ -107,6 +112,7 @@ const metadata = {
     image={{
       src: '~/assets/images/image.png',
       alt: 'Tech Design Image',
+      style: { width: '100%', height: 'auto' },
     }}
     callToAction={{
       target: '_blank',
@@ -145,6 +151,7 @@ const metadata = {
     image={{
       src: '~/assets/images/hydroguard.png',
       alt: 'Art and Music Poster Image',
+      style: { width: '100%', height: 'auto' },
     }}
     callToAction={{
       target: '_blank',
